@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>siw_pa</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <resource-ref>
+    <res-ref-name>jdbc/datasource</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+  <servlet>
+    <description></description>
+    <display-name>ActOyahinbanSelect</display-name>
+    <servlet-name>ActOyahinbanSelect</servlet-name>
+    <servlet-class>jp.siw.pa.actoyahinban.ActOyahinbanSelect</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ActOyahinbanSelect</servlet-name>
+    <url-pattern>/ActOyahinbanSelect</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CsvImport</display-name>
+    <servlet-name>CsvImport</servlet-name>
+    <servlet-class>jp.siw.pa.yamazumi.CsvImport</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CsvImport</servlet-name>
+    <url-pattern>/CsvImport</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>YamazumiCreate</display-name>
+    <servlet-name>YamazumiCreate</servlet-name>
+    <servlet-class>jp.siw.pa.yamazumi.YamazumiCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>YamazumiCreate</servlet-name>
+    <url-pattern>/YamazumiCreate</url-pattern>
+  </servlet-mapping>
+</web-app>

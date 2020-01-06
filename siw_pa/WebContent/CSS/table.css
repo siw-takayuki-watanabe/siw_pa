@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+
+#main_contents table {
+	border: 1px solid #CCC;
+	border-collapse: collapse;
+	margin-bottom: 40px;
+	margin: 0 auto;
+}
+#main_contents table tr th,
+#main_contents table tr td {
+	border: 1px dotted #CCC;
+	padding: 8px;
+}
+
+#main_contents table tr th {
+	background: #546E7A;
+	padding: 4px;
+	color: #FFF;
+}
+#main_contents table caption {
+	text-align: left;
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 6px;
+}
+#main_contents table .merge_id {
+	background: #ECEFF1;
+	font-weight: bold;
+	width: 24px;
+}
+#main_contents table.nerge_id_td {
+	background: #FFFFFF;
+	width: 30px;
+}
+#main_contents table .merge_name  {
+	background: #ECEFF1;
+	font-weight: bold;
+	width: 27px;
+}
+#main_contents table .merge_name_td  {
+	background: #FFFFFF;
+	font-weight: bold;
+	padding: 2px;
+	spacing: 2px;
+	width: 40px;
+}
+#main_contents table .merge_value {
+	background: #ECEFF1;
+	font-weight: bold;
+	width: 80px;
+}
+#main_contents table .merge_value_td {
+	background: #FFFFFF;
+	font-weight: bold;
+	padding: 2px;
+	spacing: 2px;
+	width: 80px;
+}
+#main_contents table .merge_choku {
+	background: #ECEFF1;
+	font-weight: bold;
+	font-size: 11px;
+	padding: 2px;
+	spacing: 2px;
+	width: 55.5px;
+}
+#main_contents table .merge_choku_td {
+	background: #FFFFFF;
+	font-weight: bold;
+	padding: 2px;
+	spacing: 2px;
+	width: 55px;
+}
+
+#main_contents table .merge_text {
+	background: #ECEFF1;
+	font-weight: bold;
+	width: 108px;
+}
+#main_contents table .merge_text_td {
+	background: #FFFFFF;
+	font-weight: bold;
+	padding: 2px;
+	spacing: 2px;
+	width: 120px;
+}
+
+#main_contents table .merge_returmTime {
+	background: #ECEFF1;
+	font-weight: bold;
+	width: 66.5px;
+}
+#main_contents table .merge_returmTime_td {
+	background: #FFFFFF;
+	font-weight: bold;
+	padding: 2px;
+	spacing: 2px;
+	width: 60px;
+}
+#main_contents table .merge_submit {
+	background: #ECEFF1;
+	font-weight: bold;
+	width: 38px;
+}
+#main_contents table .merge_submit_td {
+	background: #FFFFFF;
+	font-weight: bold;
+	padding: 2px;
+	spacing: 2px;
+	width: 50px;
+}
+
+#main_contents table .merge_insertTime {
+	background: #ECEFF1;
+	font-weight: bold;
+	width: 120px;
+}
+#main_contents table .merge_insertTime_td {
+	background: #FFFFFF;
+	font-weight: bold;
+	width: 120px;
+	font-size: 10px;
+}
+
+
+
+/*スクロールの為のCSS
+#side_contents  {
+
+    width: 210px;
+    height: 300px;
+    background-color:olive;
+    position: absolute;
+    top:200px;
+    right:  5px;
+    padding: 10px;
+}
+*/
+
+
+table {
+     float: left;
+     margin-right: 30px;
+     border-collapse:collapse;
+     text-align : center ;
+ }
+
+ caption {
+     font-weight: bold;
+     color: #336;
+     text-decoration: underline;
+     width: auto; /* 2019/04/15 500px⇒autoへ変更 */
+ }
+
+ th {
+     background-color: #CCC;
+     border: solid 1px #999;
+ }
+
+ td {
+     padding-left: 10px;
+     padding-right: 10px;
+     border: solid 1px #CCC;
+ }
+
+

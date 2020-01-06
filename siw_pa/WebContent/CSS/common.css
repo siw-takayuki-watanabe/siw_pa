@@ -1,0 +1,346 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*****************************************
+共通設定
+******************************************/
+/*
+ ページ全体のフォント設定
+*/
+html {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+	font-size: 13px;
+	line-height: 160%;
+	color: #333;
+}
+/*
+ すべてのブラウザ用に、デフォルトのマージンを取り除く。
+*/
+body {
+	margin-left: 0 auto; /* 2019/04/15 margin => margin-leftへ変更 */
+}
+
+/*
+ IE9+用に、displayプロパティを定義。
+ 1. Edge, IE, Firefox用、details要素とsummary要素に「display: block;」を定義。
+ 2. IE, Firefox用、main要素に「display: block;」を定義。
+*/
+
+article,
+aside,
+details, /* 1 */
+figcaption,
+figure,
+footer,
+header,
+main, /* 2 */
+menu,
+nav,
+section,
+summary { /* 1 */
+  display: block;
+}
+
+/*
+ IE9+用、displayプロパティを定義。
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/* Clearfix */
+.clearfix:after {
+    content:" ";
+    display:block;
+    clear:both;
+}
+
+/* 追加マージン */
+.mb5 {margin-bottom: 5px !important;}
+.mb10 {margin-bottom: 10px !important;}
+.mb15 {margin-bottom: 15px !important;}
+.mb20 {margin-bottom: 20px !important;}
+.mb30 {margin-bottom: 30px !important;}
+.mb40 {margin-bottom: 40px !important;}
+
+strong {
+	color: #FF5722;
+}
+
+em {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/*****************************************
+レイアウト関連
+******************************************/
+
+/* wrapper関連
+**********************/
+.wrapper {/* 全エリア共通設定 */
+	width: 100%;
+	margin: 0;
+}
+.row1 {/* ヘッダーエリア用 */
+	border-top: 3px solid #263238;
+	background: url(../images/bg_head.gif);
+}
+.row2 {/* グローバルナビゲーションエリア用 */
+ 	background: #263238;
+}
+.row3 {/* メインビジュアルエリア用 */
+    background: #ECEFF1;
+	margin-bottom: 13px;
+	padding: 13px 0;
+}
+.row4 {/* mainエリア用 */
+    margin-top: 20px;
+}
+.row5 {/* フッターエリア用 */
+    background: #263238;
+}
+.row6 {/* ログイン検索背景 */
+	margin: 0 auto;
+    background: #FFFFFF;
+}
+/* ヘッダー
+**********************/
+#main_header {
+    position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
+#logo {
+	margin: 0;
+	padding: 0;
+}
+#main_header address {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background: #FFF;
+    font-weight: bold;
+    font-style: normal;
+    color: #263238;
+    border: 1px solid #CCC;
+    padding: 6px 10px;
+    border-radius: 3px;
+}
+#main_header address p {
+	display: inline-block;
+	margin: 0;
+}
+#main_header address span {
+    font-size: 18px;
+    margin-right: 12px;
+	text-decoration: none;
+}
+#main_header address a {
+    display: block;
+    width: 160px;
+    height: 40px;
+    background: #FF5722;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    border-radius: 3px;
+    color: #FFF;
+}
+#main_header address a:hover {
+    background: #FF8A65;
+}
+#main_header h1{
+	font-size: 12px;
+	font-weight: normal;
+}
+
+/* グローバルナビゲーション
+**********************/
+#g_navi {
+	width: 960px;
+    margin: 0 auto;
+}
+#g_navi ul {
+	display: table;
+	list-style: none;
+	margin: 0;
+	padding: 3px 0;
+}
+#g_navi ul li {
+	display: table-cell;
+}
+#g_navi ul li a {
+	display: table-cell;
+	vertical-align: middle;
+	width: 192px;
+	height: 44px;
+    text-align: center;
+	line-height: 1;
+	text-decoration: none;
+    color: #FFF;
+    font-size: 12px;
+}
+#g_navi ul li a span {
+	font-size: 10px;
+}
+#g_navi ul li a:hover {
+	background: #455A64;
+    font-weight: bold;
+}
+
+/* メインコンテンツ
+**********************/
+main {
+    width: 960px;
+    margin: 0 auto;
+}
+#main_contents {
+    float: left;
+    width: 700px;
+}
+#main_contents p {
+	font-size: 14px;
+	line-height: 180%;
+}
+#main_contents h2 {
+	color: #181C5E;
+	padding-left: 32px;
+	margin: 0 0 20px;
+	width: 680px;
+	height: 50px;
+	background: url(../images/bg_h2.gif) no-repeat;
+	line-height: 50px;
+	text-shadow: 1px 1px 3px #999;
+}
+#main_contents a {
+	color: #009688;
+}
+#main_contents a:hover {
+	color: #FF5722;
+}
+#main_contents .btn_more {
+	text-align: right;
+}
+#main_contents .btn_more a {
+	background: #FF5722;
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 6px 12px;
+	border-radius: 5px;
+}
+#main_contents .btn_more a:hover {
+	background: #FF8A65;
+}
+
+#main_contents form {
+   margin:0;
+}
+/* サイドメニュー
+**********************/
+#side_contents {
+    float: right;
+    width: 180px;
+}
+#side_navi {
+    margin: 0 0 26px;
+}
+#side_navi h2 {
+	margin: 0;
+	padding: 10px;
+	background-color: #B0BEC5;
+	text-align: center;
+	font-size: 16px;
+	background-image: -webkit-linear-gradient(270deg,rgba(250,250,250,1.00) 0%,rgba(224,224,224,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(250,250,250,1.00) 0%,rgba(224,224,224,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(250,250,250,1.00) 0%,rgba(224,224,224,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(250,250,250,1.00) 0%,rgba(224,224,224,1.00) 100%);
+	border: 1px solid #B0BEC5;
+	border-top: 2px solid #455A64;
+}
+#side_navi ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#side_navi ul li a {
+	display: block;
+	padding: 8px 12px;
+	border-left: 1px solid #B0BEC5;
+	border-right: 1px solid #B0BEC5;
+	border-bottom: 1px solid #B0BEC5;
+	text-decoration: none;
+}
+#side_navi ul li a:hover {
+	background: #ECEFF1;
+}
+#side_contact {
+	margin-bottom: 40px;
+	padding: 13px;
+	border: 1px solid #B0BEC5;
+	border-radius: 5px;
+}
+#side_contact h2 {
+	margin: 0 0 12px;
+	padding-bottom: 6px;
+	border-bottom: 1px dotted #B0BEC5;
+	text-align: center;
+	font-size: 16px;
+}
+#side_contact address {
+	font-style: normal;
+}
+#side_contact address p {
+	margin: 0;
+}
+#side_contact address span {
+	font-size: 18px;
+	font-weight: bold;
+}
+#side_contact address a {
+	display: block;
+    width: 210px;
+    height: 40px;
+    background: #FF5722;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    border-radius: 3px;
+    color: #FFF;
+	font-weight: bold;
+}
+#side_contact address a:hover {
+    background: #FF8A65;
+}
+
+/*スクロールの為のCSS
+#side_contents  {
+    width: 210px;
+    height: 300px;
+    background-color:olive;
+    position: absolute;
+    top:200px;
+    right:  5px;
+    padding: 10px;
+}
+*/
+
+
+
+
+/* フッター
+**********************/
+#main_footer {
+    width: 960px;
+    margin: 0 auto;
+	padding: 13px 0;
+    color: #FFF;
+}
+#main_footer #copy {
+	text-align: center;
+}
